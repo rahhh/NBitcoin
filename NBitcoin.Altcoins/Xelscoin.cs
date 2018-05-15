@@ -14,7 +14,7 @@ namespace NBitcoin.Altcoins
 	{
 		public static Xelscoin Instance { get; } = new Xelscoin();
 
-		public override string CryptoCode => "LTC";
+		public override string CryptoCode => "XEL";
 
 		private Xelscoin()
 		{
@@ -219,8 +219,8 @@ namespace NBitcoin.Altcoins
 			.SetBase58Bytes(Base58Type.EXT_PUBLIC_KEY, new byte[] { 0x04, 0x88, 0xB2, 0x1E })
 			.SetBase58Bytes(Base58Type.EXT_SECRET_KEY, new byte[] { 0x04, 0x88, 0xAD, 0xE4 })
 			.SetNetworkStringParser(new XelscoinMainnetAddressStringParser())
-			.SetBech32(Bech32Type.WITNESS_PUBKEY_ADDRESS, Encoders.Bech32("ltc"))
-			.SetBech32(Bech32Type.WITNESS_SCRIPT_ADDRESS, Encoders.Bech32("ltc"))
+			.SetBech32(Bech32Type.WITNESS_PUBKEY_ADDRESS, Encoders.Bech32("xel"))
+			.SetBech32(Bech32Type.WITNESS_SCRIPT_ADDRESS, Encoders.Bech32("xel"))
 			.SetMagic(0xdbb6c0fb)
 			.SetPort(9333)
 			.SetRPCPort(9332)
@@ -266,12 +266,12 @@ namespace NBitcoin.Altcoins
 			.SetBase58Bytes(Base58Type.SECRET_KEY, new byte[] { 239 })
 			.SetBase58Bytes(Base58Type.EXT_PUBLIC_KEY, new byte[] { 0x04, 0x35, 0x87, 0xCF })
 			.SetBase58Bytes(Base58Type.EXT_SECRET_KEY, new byte[] { 0x04, 0x35, 0x83, 0x94 })
-			.SetBech32(Bech32Type.WITNESS_PUBKEY_ADDRESS, Encoders.Bech32("tltc"))
-			.SetBech32(Bech32Type.WITNESS_SCRIPT_ADDRESS, Encoders.Bech32("tltc"))
+			.SetBech32(Bech32Type.WITNESS_PUBKEY_ADDRESS, Encoders.Bech32("txel"))
+			.SetBech32(Bech32Type.WITNESS_SCRIPT_ADDRESS, Encoders.Bech32("txel"))
 			.SetMagic(0xf1c8d2fd)
 			.SetPort(19335)
 			.SetRPCPort(19332)
-			.SetName("xels-test")
+			.SetName("xel-test")
 			//.AddAlias("ltc-testnet")
 			//.AddAlias("litecoin-test")
 			//.AddAlias("litecoin-testnet")
@@ -312,12 +312,12 @@ namespace NBitcoin.Altcoins
 			.SetBase58Bytes(Base58Type.SECRET_KEY, new byte[] { 239 })
 			.SetBase58Bytes(Base58Type.EXT_PUBLIC_KEY, new byte[] { 0x04, 0x35, 0x87, 0xCF })
 			.SetBase58Bytes(Base58Type.EXT_SECRET_KEY, new byte[] { 0x04, 0x35, 0x83, 0x94 })
-			.SetBech32(Bech32Type.WITNESS_PUBKEY_ADDRESS, Encoders.Bech32("tltc"))
-			.SetBech32(Bech32Type.WITNESS_SCRIPT_ADDRESS, Encoders.Bech32("tltc"))
+			.SetBech32(Bech32Type.WITNESS_PUBKEY_ADDRESS, Encoders.Bech32("txel"))
+			.SetBech32(Bech32Type.WITNESS_SCRIPT_ADDRESS, Encoders.Bech32("txel"))
 			.SetMagic(0xdab5bffa)
 			.SetPort(19444)
 			.SetRPCPort(19332)
-			.SetName("xels-reg")
+			.SetName("xel-reg")
 			//.AddAlias("ltc-regtest")
 			//.AddAlias("litecoin-reg")
 			//.AddAlias("litecoin-regtest")
