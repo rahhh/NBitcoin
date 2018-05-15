@@ -8,6 +8,7 @@ namespace NBitcoin.Altcoins
 {
     public class AltNetworkSets
     {
+		public static Xelscoin Xelscoin { get; } = Xelscoin.Instance;
 		public static BCash BCash { get; } = BCash.Instance;
 		public static BGold BGold { get; } = BGold.Instance;
 		public static Dash Dash { get; } = Dash.Instance;
@@ -20,6 +21,7 @@ namespace NBitcoin.Altcoins
 
 		public static IEnumerable<INetworkSet> GetAll()
 		{
+			yield return Xelscoin;
 			yield return Bitcoin;
 			yield return Litecoin;
 			yield return Viacoin;
