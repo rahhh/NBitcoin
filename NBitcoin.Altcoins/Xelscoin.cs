@@ -123,14 +123,14 @@ namespace NBitcoin.Altcoins
 			NetworkBuilder builder = new NetworkBuilder();
 			builder.SetConsensus(new Consensus()
 			{
-				SubsidyHalvingInterval = 840000,
+				SubsidyHalvingInterval = 72490714, // Neo: Max coin divided by 35
 				MajorityEnforceBlockUpgrade = 750,
 				MajorityRejectBlockOutdated = 950,
 				MajorityWindow = 1000,
 				BIP34Hash = new uint256("fa09d204a83a768ed5a7c8d441fa62f2043abf420cff1226c7b4329aeb9d51cf"),
 				PowLimit = new Target(new uint256("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")),
 				PowTargetTimespan = TimeSpan.FromSeconds(3.5 * 24 * 60 * 60),
-				PowTargetSpacing = TimeSpan.FromSeconds(2.5 * 60),
+				PowTargetSpacing = TimeSpan.FromSeconds(2.5 * 60), // 150 seconds block time
 				PowAllowMinDifficultyBlocks = false,
 				PowNoRetargeting = false,
 				RuleChangeActivationThreshold = 6048,
@@ -168,7 +168,7 @@ namespace NBitcoin.Altcoins
 			var builder = new NetworkBuilder();
 			builder.SetConsensus(new Consensus()
 			{
-				SubsidyHalvingInterval = 840000,
+				SubsidyHalvingInterval = 990000,
 				MajorityEnforceBlockUpgrade = 51,
 				MajorityRejectBlockOutdated = 75,
 				MajorityWindow = 1000,
@@ -222,7 +222,7 @@ namespace NBitcoin.Altcoins
 				MinimumChainWork = uint256.Zero,
 				PowNoRetargeting = true,
 				RuleChangeActivationThreshold = 108,
-				MinerConfirmationWindow = 2016,
+				MinerConfirmationWindow = 2016, // Neo: 60min / 2.5min = 24 * 24hours = 576 * 3.5 days = 2016
 				CoinbaseMaturity = 100,
 				//XelscoinWorkCalculation = true,
 				ConsensusFactory = XelscoinConsensusFactory.Instance
