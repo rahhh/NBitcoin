@@ -123,7 +123,7 @@ namespace NBitcoin.Altcoins
 			NetworkBuilder builder = new NetworkBuilder();
 			builder.SetConsensus(new Consensus()
 			{
-				SubsidyHalvingInterval = 72490714, // Neo: Max coin divided by 35
+				SubsidyHalvingInterval = 1014286, // Neo: 1183333
 				MajorityEnforceBlockUpgrade = 750,
 				MajorityRejectBlockOutdated = 950,
 				MajorityWindow = 1000,
@@ -168,7 +168,7 @@ namespace NBitcoin.Altcoins
 			var builder = new NetworkBuilder();
 			builder.SetConsensus(new Consensus()
 			{
-				SubsidyHalvingInterval = 990000,
+				SubsidyHalvingInterval = 1014286,
 				MajorityEnforceBlockUpgrade = 51,
 				MajorityRejectBlockOutdated = 75,
 				MajorityWindow = 1000,
@@ -211,7 +211,7 @@ namespace NBitcoin.Altcoins
 			var builder = new NetworkBuilder();
 			builder.SetConsensus(new Consensus()
 			{
-				SubsidyHalvingInterval = 150,
+				SubsidyHalvingInterval = 1014286,
 				MajorityEnforceBlockUpgrade = 51,
 				MajorityRejectBlockOutdated = 75,
 				MajorityWindow = 144,
@@ -227,7 +227,7 @@ namespace NBitcoin.Altcoins
 				//XelscoinWorkCalculation = true,
 				ConsensusFactory = XelscoinConsensusFactory.Instance
 			})
-			.SetBase58Bytes(Base58Type.PUBKEY_ADDRESS, new byte[] { 111 })
+			.SetBase58Bytes(Base58Type.PUBKEY_ADDRESS, new byte[] { 137 })
 			.SetBase58Bytes(Base58Type.SCRIPT_ADDRESS, new byte[] { 58 })
 			.SetBase58Bytes(Base58Type.SECRET_KEY, new byte[] { 239 })
 			.SetBase58Bytes(Base58Type.EXT_PUBLIC_KEY, new byte[] { 0x04, 0x35, 0x87, 0xCF })
